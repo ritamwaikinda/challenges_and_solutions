@@ -3,9 +3,8 @@
  * @return {number[]}
  */
 var sortedSquares = function(nums) {
-    let arr = []
     for(let i=0; i<nums.length; i++){
-        arr.push(nums[i] ** 2)
+        nums[i] = nums[i] ** 2
     }
-    return arr.sort((a,b) => a-b)
+    return nums.sort((a,b) => a-b)
 };
